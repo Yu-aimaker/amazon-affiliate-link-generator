@@ -209,6 +209,11 @@ footer {
     animation: fadeInUp 1s ease-out;
 }
 
+.announcement {
+    font-size: 0.9rem;
+    color: #999;
+}
+
 /* アニメーション */
 @keyframes fadeInDown {
     from {
