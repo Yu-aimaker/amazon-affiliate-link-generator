@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazonアフィリエイトリンクジェネレーター</title>
+    <meta name="description" content="Amazon商品URLを簡単にアフィリエイトリンクに変換できるツールです。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/header.svg" alt="Amazon Affiliate Link Generator" class="header-logo">
+            <h1>
+                <i class="fab fa-amazon"></i> 
+                アフィリエイトリンク変換ツール
+            </h1>
+            <p>簡単操作で Amazon商品URLをアフィリエイトリンクに瞬時に変換</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="amazonUrl">
+                    <i class="fas fa-link"></i> Amazon商品URL
+                </label>
+                <input type="text" id="amazonUrl"
+                       placeholder="https://www.amazon.co.jp/dp/XXXXXXXXXX"
+                       class="input-field"
+                       aria-label="Amazon商品URLを入力">
+                
+                <label for="trackingId">
+                    <i class="fas fa-tag"></i> トラッキングID
+                </label>
+                <input type="text" id="trackingId"
+                       placeholder="your-id-20"
+                       class="input-field"
+                       aria-label="アフィリエイトトラッキングIDを入力">
+                <button id="convertBtn" class="primary-button">
+                    <i class="fas fa-magic"></i> 変換する
+                </button>
+            </div>
+            <div id="message" class="message" role="alert" aria-live="polite"></div>
+        </main>
+
+        <footer>
+            <p>
+                <i class="fas fa-code"></i> with 
+                <i class="fas fa-heart" style="color: var(--primary-color);"></i> 
+                © 2025 Amazonアフィリエイトリンクジェネレーター
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

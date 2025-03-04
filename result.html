@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変換結果 - Amazonアフィリエイトリンクジェネレーター</title>
+    <meta name="description" content="Amazon商品URLをアフィリエイトリンクに変換した結果を表示します。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/header.svg" alt="Amazon Affiliate Link Generator" class="header-logo">
+            <h1>
+                <i class="fab fa-amazon"></i> 
+                変換結果
+            </h1>
+            <p>アフィリエイトリンクの生成が完了しました</p>
+        </header>
+
+        <main>
+            <div class="output-section">
+                <label for="affiliateUrl">
+                    <i class="fas fa-external-link-alt"></i> アフィリエイトリンク
+                </label>
+                <input type="text" id="affiliateUrl"
+                       readonly
+                       class="input-field"
+                       aria-label="生成されたアフィリエイトリンク">
+                <button id="copyBtn" class="secondary-button">
+                    <i class="far fa-copy"></i> コピーする
+                </button>
+            </div>
+
+            <div class="image-preview-section">
+                <label>
+                    <i class="fas fa-image"></i> 商品画像プレビュー
+                </label>
+                <div id="imagePreview" class="image-preview"></div>
+            </div>
+
+            <div class="html-output-section">
+                <label for="htmlOutput">
+                    <i class="fas fa-code"></i> HTML出力
+                </label>
+                <textarea id="htmlOutput"
+                         readonly
+                         class="input-field html-output"
+                         aria-label="生成されたHTML"></textarea>
+                <button id="copyHtmlBtn" class="secondary-button">
+                    <i class="far fa-copy"></i> HTMLをコピー
+                </button>
+            </div>
+
+            <div class="button-section">
+                <button id="backBtn" class="primary-button" onclick="window.location.href='index.html'">
+                    <i class="fas fa-arrow-left"></i> 入力画面に戻る
+                </button>
+            </div>
+
+            <div id="message" class="message" role="alert" aria-live="polite"></div>
+        </main>
+
+        <footer>
+            <p>
+                <i class="fas fa-code"></i> with 
+                <i class="fas fa-heart" style="color: var(--primary-color);"></i> 
+                © 2025 Amazonアフィリエイトリンクジェネレーター
+            </p>
+        </footer>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>
