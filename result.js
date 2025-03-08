@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // テーマ管理の初期化
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeToggle.checked = savedTheme === 'dark';
+
+    // テーマ切り替えイベントの設定
+    themeToggle.addEventListener('change', () => {
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
     // 要素の取得
     const affiliateUrlInput = document.getElementById('affiliateUrl');
     const copyBtn = document.getElementById('copyBtn');
