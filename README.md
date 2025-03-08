@@ -1,7 +1,9 @@
 # 🔗 Amazon アフィリエイトリンクジェネレーター
 
 <div align="center">
-  <img src="assets/header.svg" alt="Amazon Affiliate Link Generator Header" width="100%" />
+  <a href="https://yu-aimaker.github.io/amazon-affiliate-link-generator/">
+    <img src="assets/header.svg" alt="Amazon Affiliate Link Generator Header" width="100%" />
+  </a>
 </div>
 
 ## 📝 概要
